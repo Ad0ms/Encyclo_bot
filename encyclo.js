@@ -14,3 +14,10 @@ bot.on('text', function(msg) {
  else bot.sendMessage(msg.from.id, 'То что Вы ищете среди заведомых фуфломицинов не числится(при условии корректного написания) и скорее всего является нормальным лекарством, подробнее разобраться можно по ссылкам:\nhttp://www.cochranelibrary.com/\nhttps://www.ncbi.nlm.nih.gov/pubmed/\nhttps://www.accessdata.fda.gov/scripts/cder/daf/'); 
 });
 });
+const express = require('express');
+const app = express();
+
+// Replace 'YOUR_VERCEL_DEPLOYED_URL' with the actual URL of your deployed Vercel app.
+const webhookUrl = 'https://encyclo-bot-vqvo.vercel.app/api/telegram-bot';
+
+bot.setWebHook(webhookUrl);
