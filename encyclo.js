@@ -1,6 +1,6 @@
 var TelegramBot = require('node-telegram-bot-api');
 var fs = require('fs');
-var token = '337899036:AAFzrrj3JdCyO2PM7BRI9JlfLVvGZB4jlmA';
+var token = '6861515589:AAEhgd4C8A398aPQ5_anbXastZwlgp0NenQ';
 var bot = new TelegramBot(token, {polling: true});
 bot.on('text', function(msg) {
 	var msgN = msg.text[0].toUpperCase() + msg.text.slice(1);
